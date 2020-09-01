@@ -1,0 +1,15 @@
+@use 'true' as *;
+@use '../' as str;
+
+@include test-module('kebab-to-camel-case [function]') {
+   @include test('correctly converts kebab to camel case') {
+      @include assert-equal(str.kebab-to-camel-case('simple'), 'simple');
+      @include assert-equal(str.kebab-to-camel-case('simple-test'), 'simpleTest');
+      @include assert-equal(str.kebab-to-camel-case('really-really-long-name-test'), 'reallyReallyLongNameTest');
+      @include assert-equal(str.kebab-to-camel-case('test-3-with-number'), 'test3WithNumber');
+      @include assert-equal(str.kebab-to-camel-case('number-at-end-2'), 'numberAtEnd2');
+      @include assert-equal(str.kebab-to-camel-case('some-thing--double'), 'someThing-double');
+   }
+}
+
+@include report;
