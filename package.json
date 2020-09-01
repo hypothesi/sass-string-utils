@@ -1,0 +1,31 @@
+{
+  "name": "@hypothesi/sass-string-utils",
+  "version": "0.1.0",
+  "description": "A small utility library for string manipulation functions in SASS/SCSS",
+  "main": "_index.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hypothesi/sass-string-utils.git"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "string",
+    "manipulation",
+    "camelCase",
+    "kebab-case"
+  ],
+  "author": "Matt Luedke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hypothesi/sass-string-utils/issues"
+  },
+  "homepage": "https://github.com/hypothesi/sass-string-utils#readme",
+  "devDependencies": {
+    "sass": "1.26.10",
+    "sass-true": "6.0.0"
+  }
+}
