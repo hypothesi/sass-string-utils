@@ -11,8 +11,8 @@ npm install @hypothesi/sass-string-utils
 Import string utils into your SCSS:
 
 ```scss
-@use '@hypothesi/sass-string-utils' as strUtils;
+@use './node_modules/@hypothesi/sass-string-utils' as strUtils;
 
 // Example usage
-$camelCase: strUtils.kebab-to-camel-case('background-color'); // Outputs backgroundColor
+@debug strUtils.kebab-to-camel-case('background-color'); // Outputs backgroundColor
 ```
