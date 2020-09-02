@@ -2,6 +2,8 @@
 
 A small utility library for string manipulation functions in SASS/SCSS.
 
+[Read the full function documentation.](https://hypothesi.github.io/sass-string-utils)
+
 ## Getting Started
 
 ```bash
