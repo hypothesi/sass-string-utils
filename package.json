@@ -4,7 +4,8 @@
   "description": "A small utility library for string manipulation functions in SASS/SCSS",
   "main": "_index.scss",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build-docs": "sassdoc ./*.scss --dest docs"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
   "devDependencies": {
     "mocha": "8.1.3",
     "sass": "1.26.10",
-    "sass-true": "6.0.0"
+    "sass-true": "6.0.0",
+    "sassdoc": "2.7.3"
   }
 }

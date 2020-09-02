@@ -1,3 +1,16 @@
+/// Converts a kebab-case string to a camelCase string. For example, the string
+/// `'one-two-three-four'` will be converted to `'oneTwoThreeFour'`.
+///
+/// This function can also handle a special case where groups of words are separated by
+/// two dash characters. For example, the string `'background-color--red'` will be
+/// converted to `'backgroundColor-red'`.
+///
+/// @param {string} $str The string to convert to camelCase. This string must be in
+///                      kebab-case: all characters must be lowercase and words separated
+///                      by dash '-' characters. Optionally, word groups can be separated
+///                      by two dashes. See the description for more information.
+/// @return {string} The string, converted to camelCase
+/// @link https://en.wikipedia.org/wiki/Letter_case#Special_case_styles
 @function kebab-to-camel-case($str) {
    $camelCase: '';
    $prevCharWasDash: false;
